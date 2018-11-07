@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#243239</color> //2
+    <color name="colorPrimary">#243239</color>//2
     <color name="colorPrimaryDark">#192d36</color>//1
     <color name="colorAccent">#8b2f12</color>
     <color name="my">#63291c</color>
+    <color name="spinn">#ccbdbb</color>
 </resources>

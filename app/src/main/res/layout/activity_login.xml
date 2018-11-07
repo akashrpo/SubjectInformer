@@ -29,8 +29,8 @@
         android:layout_marginTop="40dp"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
+        android:hint="Registration No."
+        android:inputType="phone"
         android:textColor="#ccbdbb"
         android:textColorHint="#ccbdbb"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -88,5 +88,18 @@
         app:layout_constraintStart_toStartOf="@+id/button_l"
         app:layout_constraintTop_toBottomOf="@+id/button_l"
         app:layout_constraintVertical_bias="0.337" />
+
+    <Button
+        android:id="@+id/button007"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_button"
+        android:text="Temporary Teachers Login"
+        android:textColor="#ccbdbb"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
 </android.support.constraint.ConstraintLayout>

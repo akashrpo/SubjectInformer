@@ -2,38 +2,88 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_lay"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="51dp"
-        android:layout_height="57dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        app:srcCompat="@drawable/subject" />
+    android:layout_height="45dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/sub_bor"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="219dp"
-        android:layout_height="47dp"
+        android:id="@+id/textView100"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="78dp"
-        android:text="Stochastic Process and Numerical Methods"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="01"
         android:textColor="@color/spinn"
-        android:textSize="14dp" />
+        android:textSize="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="35dp"
-        android:layout_height="38dp"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="11dp"
-        app:srcCompat="@drawable/go" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView100"
+        android:background="#485a63" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/textView100"
+        android:text="Akash Gupta"
+        android:textColor="@color/spinn"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView101"
+        android:background="#485a63" />
+
+    <TextView
+        android:id="@+id/editText168"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/textView101"
+        android:text="201600037"
+        android:textColor="@color/spinn"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/editText168"
+        android:background="#485a63" />
+
+    <EditText
+        android:id="@+id/editText167"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/editText168"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/spinn"
+        android:textColorHint="@color/spinn" />
 </RelativeLayout>

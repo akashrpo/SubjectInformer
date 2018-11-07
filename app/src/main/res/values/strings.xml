@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Subject Informer</string>
     <string name="title_activity_student">student</string>
+    <string-array name="department">
+        <item>Select Department</item>
+        <item>Computer Science</item>
+        <item>Civil</item>
+        <item>Mechanical</item>
+        <item>EE</item>
+    </string-array>
+    <string name="title_activity_teacher_lay">teacher_lay</string>
+    <string name="already_a_member_login"><u>Already a member? Login</u></string>
+    <string name="software_engineering_project_2018"><u>Software Engineering Project 2018</u></string>
+
 </resources>

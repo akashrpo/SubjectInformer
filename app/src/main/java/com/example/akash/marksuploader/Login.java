@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        Button btn2 = (Button)findViewById(R.id.button_l);
+        Button btn2 = (Button) findViewById(R.id.button_l);
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +31,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        Button btn3 = (Button) findViewById(R.id.button007);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, teacher.class));
+            }
+        });
 
     }
 }

@@ -1,9 +1,286 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#263238"
     tools:context=".teacher">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.009">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Stochastic Process and Numerical Methods"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView15"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="84dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Operating Systems"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView20"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Software Engineering"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView25"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Discrete Structure"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView30"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Computer Networks I"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/imageView40"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Advanced Java Programming (EL)"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
