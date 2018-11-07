@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#263238"
+    android:fadeScrollbars="false"
+    android:scrollbarStyle="insideInset"
+    android:scrollbarTrackVertical="@drawable/track"
     tools:context=".Uploader">
 
     <HorizontalScrollView
@@ -108,7 +111,7 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerid"
                 android:layout_width="382dp"
-                android:layout_height="516dp"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.787"
                 app:layout_constraintStart_toStartOf="parent"
