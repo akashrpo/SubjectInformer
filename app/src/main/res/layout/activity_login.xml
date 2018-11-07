@@ -32,7 +32,7 @@
         android:hint="Registration No."
         android:inputType="phone"
         android:textColor="#ccbdbb"
-        android:textColorHint="#ccbdbb"
+        android:textColorHint="#4b4747"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -50,7 +50,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#ccbdbb"
-        android:textColorHint="#ccbdbb"
+        android:textColorHint="#4b4747"
         app:layout_constraintEnd_toEndOf="@+id/editText4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editText4"
