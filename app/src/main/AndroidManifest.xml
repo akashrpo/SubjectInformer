@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.akash.marksuploader">
+
+    <!--Software Engineering Project CS 1504.-->
+    <!--Software Engineering Project CS 1504.-->
+    <!--Software Engineering Project CS 1504.-->
+    <!--Software Engineering Project CS 1504.-->
+    <!--Software Engineering Project CS 1504.-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
