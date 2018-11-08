@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--  ajksdfahsdfk nsdklvnasdvfnhsdjkvfnhklasdjhfiweuonhfkhvkasdvsda    -->
-        
+
+        <!-- ajksdfahsdfk nsdklvnasdvfnhsdjkvfnhklasdjhfiweuonhfkhvkasdvsda -->
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -33,15 +34,16 @@
             android:name=".student"
             android:screenOrientation="portrait" />
         <activity android:name=".teacher" />
-
         <activity
             android:name=".Uploader"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".Devel"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".feedback"
+            android:theme="@style/AppTheme.CustomTheme">
 
+        </activity>
     </application>
 
 </manifest>
