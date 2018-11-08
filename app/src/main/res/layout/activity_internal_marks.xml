@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    android:id="@+id/scrollview_IM"
+    android:fadeScrollbars="false"
+    android:scrollbarStyle="insideInset"
+    android:scrollbarTrackVertical="@drawable/track"
+    tools:context=".InternalMarks">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--Total 11 Columns-->
+            <RelativeLayout
+                android:id="@+id/rl1_IM"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/uplo_bor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/subcode_IM"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Sub Code"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/subcode_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/subject_IM"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/subcode_IM"
+                    android:gravity="center"
+                    android:text="Subjects"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/subject_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/quiz1_IM"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/subject_IM"
+                    android:gravity="center"
+                    android:text="Quiz-I"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/quiz1_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/sess1-50_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/quiz1_IM"
+                    android:gravity="center"
+                    android:text="Sess-I (50)"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/sess1-50_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/sess1-15_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/sess1-50_IM"
+                    android:gravity="center"
+                    android:text="Sess-I (15)"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/sess1-15_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/quiz2_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/sess1-15_IM"
+                    android:gravity="center"
+                    android:text="Quiz-II"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/quiz2_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/sess2-50_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/quiz2_IM"
+                    android:gravity="center"
+                    android:text="Sess-II (50)"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/sess2-50_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/sess2-15_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/sess2-50_IM"
+                    android:gravity="center"
+                    android:text="Sess-II (15)"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/sess2-15_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/assignment_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_toEndOf="@+id/sess2-15_IM"
+                    android:gravity="center"
+                    android:text="ASSIGN"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/assignment_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/attendance_IM"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/assignment_IM"
+                    android:gravity="center"
+                    android:text="ATTND"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/attendance_IM"
+                    android:background="#485a63" />
+
+                <TextView
+                    android:id="@+id/total_IM"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/attendance_IM"
+                    android:gravity="center"
+                    android:text="TOTAL (50)"
+                    android:textColor="@color/spinn"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerID_IM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl1_IM"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </HorizontalScrollView>
+</ScrollView>

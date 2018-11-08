@@ -21,6 +21,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".Login"
@@ -40,8 +41,11 @@
         <activity
             android:name=".Devel"
             android:screenOrientation="portrait" />
-        <activity android:name=".feedback"
-            android:theme="@style/AppTheme.CustomTheme">
+        <activity
+            android:name=".feedback"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".studentMarks" />
+        <activity android:name=".InternalMarks">
 
         </activity>
     </application>

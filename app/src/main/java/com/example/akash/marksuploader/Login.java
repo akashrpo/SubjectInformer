@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
                     ed3.setError("Invalid Credentials!");
 
                 } else {
-                    startActivity(new Intent(Login.this, student.class));
+                    startActivity(new Intent(Login.this, InternalMarks.class));
                 }
             }
         });

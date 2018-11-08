@@ -100,7 +100,6 @@ public class Uploader extends AppCompatActivity {
 
     private void initRecyclerView() {
         Log.d(TAG, "initRecyclerView");
-        ;
         RecyclerView recyclerView = findViewById(R.id.recyclerid);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mroll_no, mname, mreg_no);
         recyclerView.setAdapter(adapter);
