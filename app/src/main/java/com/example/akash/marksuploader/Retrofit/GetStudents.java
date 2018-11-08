@@ -20,7 +20,7 @@ public class GetStudents {
     }
 
     public Student getStudent(String regdNo, String password) {
-        SILoginApi apiService = ApiClient.getClient().create(SILoginApi.class);
+        SIRequestApi apiService = ApiClient.getClient().create(SIRequestApi.class);
         Call<Student> call = apiService.getStudent("json",regdNo,password);
         call.enqueue(new Callback<Student>() {
             @Override
