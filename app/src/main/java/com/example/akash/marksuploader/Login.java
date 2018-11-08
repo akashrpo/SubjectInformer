@@ -43,6 +43,9 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        final EditText ed2 = (EditText) findViewById(R.id.editText4);
+        final EditText ed3 = (EditText) findViewById(R.id.editText2);
+
         Button btn2 = (Button) findViewById(R.id.button_l);
 
 
@@ -50,10 +53,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isEmptyField((EditText) findViewById(R.id.editText4))) {
-                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+                    ed2.setError("Invalid Credentials!");
+
                 }
                 else if(isEmptyField((EditText) findViewById(R.id.editText2))) {
-                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+                    ed3.setError("Invalid Credentials!");
+
                 } else {
                     startActivity(new Intent(Login.this, student.class));
                 }

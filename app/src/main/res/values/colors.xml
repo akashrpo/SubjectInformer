@@ -5,4 +5,5 @@
     <color name="colorAccent">#8b2f12</color>
     <color name="my">#63291c</color>
     <color name="spinn">#ccbdbb</color>
+    <color name="hintColor">#4b4747</color>
 </resources>
