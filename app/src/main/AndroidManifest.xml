@@ -30,7 +30,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustResize" />
         <activity
-            android:name=".student"
+            android:name=".Student"
             android:screenOrientation="portrait" />
         <activity android:name=".TeacherFrontPage" />
         <activity
@@ -42,10 +42,6 @@
         <activity
             android:name=".Feedback"
             android:theme="@style/AppTheme.CustomTheme" />
-        <activity android:name=".InternalMarks" />
-        <activity android:name=".attendance">
-
-        </activity>
     </application>
 
 </manifest>
