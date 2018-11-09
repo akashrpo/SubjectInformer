@@ -42,7 +42,6 @@
         <activity
             android:name=".feedback"
             android:theme="@style/AppTheme.CustomTheme" />
-        <activity android:name=".studentMarks" />
         <activity android:name=".InternalMarks" />
         <activity android:name=".attendance">
 
