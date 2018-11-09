@@ -46,5 +46,7 @@ public class student extends AppCompatActivity {
         AdvancedJavaView.setText(thisStudent.Advanced_Java);
         String user=thisStudent.name;
         setTitle("Hello, "+user+"!");
+        Date date = new Date();
+        Toast.makeText(getApplicationContext(),"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
     }
 }
