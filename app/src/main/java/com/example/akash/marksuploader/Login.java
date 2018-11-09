@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 
 public class Login extends AppCompatActivity {
@@ -39,7 +37,7 @@ public class Login extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, teacher.class));
+                startActivity(new Intent(Login.this, TeacherFrontPage.class));
             }
         });
 

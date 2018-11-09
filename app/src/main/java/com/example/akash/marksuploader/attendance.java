@@ -128,7 +128,7 @@ public class attendance extends AppCompatActivity {
     private void initRecyclerView() {
         Log.d(TAG, "initRecyclerView");
         RecyclerView recyclerView = findViewById(R.id.recycler_attendance);
-        RecyclerViewAdapter_attnd adapter = new RecyclerViewAdapter_attnd(this, mconducted, mattended, mpercentage);
+        RecyclerViewAdapterAttendance adapter = new RecyclerViewAdapterAttendance(this, mconducted, mattended, mpercentage);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

@@ -32,15 +32,15 @@
         <activity
             android:name=".student"
             android:screenOrientation="portrait" />
-        <activity android:name=".teacher" />
+        <activity android:name=".TeacherFrontPage" />
         <activity
             android:name=".Uploader"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Devel"
+            android:name=".Developers"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".feedback"
+            android:name=".Feedback"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".InternalMarks" />
         <activity android:name=".attendance">

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class feedback extends AppCompatActivity {
+public class Feedback extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -50,7 +50,7 @@ public class RecyclerViewAdapter_IM extends RecyclerView.Adapter<RecyclerViewAda
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.studentsubjectlayout, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_student_subjects, viewGroup, false);
         ViewHolder holder = new ViewHolder(view);
         return holder;
     }

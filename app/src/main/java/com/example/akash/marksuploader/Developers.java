@@ -1,22 +1,19 @@
 package com.example.akash.marksuploader;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Devel extends AppCompatActivity {
+public class Developers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devel);
+        setContentView(R.layout.activity_developer);
         setTitle("Developers");
 
         RelativeLayout rl1 = (RelativeLayout) findViewById(R.id.relative1);
@@ -24,7 +21,7 @@ public class Devel extends AppCompatActivity {
         rl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Devel.this, "Front-End Developer", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Developers.this, "Front-End Developer", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -35,7 +32,7 @@ public class Devel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(Devel.this, "Back-End Developer", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Developers.this, "Back-End Developer", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -46,7 +43,7 @@ public class Devel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(Devel.this, "Computer Networks - I Developer Lol!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Developers.this, "Computer Networks - I Developer Lol!", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -56,7 +53,7 @@ public class Devel extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), feedback.class));
+                startActivity(new Intent(getApplicationContext(), Feedback.class));
 
 
             }

@@ -8,16 +8,16 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import java.util.Date;
 
-public class teacher extends AppCompatActivity {
+public class TeacherFrontPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher);
+        setContentView(R.layout.activity_teacher_front_page);
         String user = "Teachers";
         setTitle("Howdy, " + user + "!");
         Date date = new Date();
-        Toast.makeText(teacher.this,"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
+        Toast.makeText(TeacherFrontPage.this,"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
 
 
         RelativeLayout rl1 = (RelativeLayout) findViewById(R.id.relativeLayout3);
@@ -25,7 +25,7 @@ public class teacher extends AppCompatActivity {
         rl1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 
@@ -34,7 +34,7 @@ public class teacher extends AppCompatActivity {
         rl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 
@@ -43,7 +43,7 @@ public class teacher extends AppCompatActivity {
         rl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 
@@ -52,7 +52,7 @@ public class teacher extends AppCompatActivity {
         rl4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 
@@ -61,7 +61,7 @@ public class teacher extends AppCompatActivity {
         rl5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 
@@ -70,7 +70,7 @@ public class teacher extends AppCompatActivity {
         rl8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(teacher.this, Uploader.class));
+                startActivity(new Intent(TeacherFrontPage.this, Uploader.class));
             }
         });
 

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class RecyclerViewAdapter_attnd extends RecyclerView.Adapter<RecyclerViewAdapter_attnd.ViewHolder> {
+public class RecyclerViewAdapterAttendance extends RecyclerView.Adapter<RecyclerViewAdapterAttendance.ViewHolder> {
     private static final String TAG = "RecyclerViewAdapter";
 
     private ArrayList<String> mconducted = new ArrayList<>();
@@ -21,8 +21,8 @@ public class RecyclerViewAdapter_attnd extends RecyclerView.Adapter<RecyclerView
     private Context mcontext;
 
 
-    public RecyclerViewAdapter_attnd(Context context, ArrayList<String> conducted, ArrayList<String> attended,
-                                     ArrayList<String> percentage) {
+    public RecyclerViewAdapterAttendance(Context context, ArrayList<String> conducted, ArrayList<String> attended,
+                                         ArrayList<String> percentage) {
         mcontext = context;
         mconducted = conducted;
         mattended = attended;
@@ -32,7 +32,7 @@ public class RecyclerViewAdapter_attnd extends RecyclerView.Adapter<RecyclerView
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_attend, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_attendance, viewGroup, false);
         ViewHolder holder = new ViewHolder(view);
         return holder;
     }

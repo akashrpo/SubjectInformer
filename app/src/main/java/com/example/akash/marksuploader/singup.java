@@ -1,13 +1,9 @@
 package com.example.akash.marksuploader;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,7 +41,7 @@ public class singup extends AppCompatActivity {
         // oTextView.setTextColor(getResources().getColor(R.color.hintColor));
 
         ArrayAdapter<String> myadapter = new ArrayAdapter<String>(singup.this,
-                R.layout.activity_spin_item,
+                R.layout.layout_spinner_for_singup,
                 getResources().getStringArray(R.array.department));
 
         myadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
