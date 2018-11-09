@@ -7,26 +7,24 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private static final String TAG = "RecyclerViewAdapter";
-
-    private ArrayList<String> mroll_no = new ArrayList<>();
-    private ArrayList<String> mname = new ArrayList<>();
-    private ArrayList<String> mreg_no = new ArrayList<>();
+    private List<Student> students;
     private Context mcontext;
+    private String subCode;
 
 
-    public RecyclerViewAdapter(Context context, ArrayList<String> roll_no, ArrayList<String> name,
-                               ArrayList<String> reg_no) {
+    public RecyclerViewAdapter(Context context, List<Student> students,String subCode) {
         mcontext = context;
-        mroll_no = roll_no;
-        mname = name;
-        mreg_no = reg_no;
+        this.students = students;
+        this.subCode = subCode;
     }
 
     @NonNull
@@ -40,23 +38,36 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         Log.d(TAG, "onBindViewHolder: called");
-
-//-----------------------------------------
-        viewHolder.t1.setText(mroll_no.get(i));
-        viewHolder.t2.setText(mname.get(i));
-        viewHolder.t3.setText(mreg_no.get(i));
+        
+        viewHolder.t1.setText(students.get(i).rollNo);
+        viewHolder.t2.setText(students.get(i).name);
+        viewHolder.t3.setText(students.get(i).regdNo);
+        //Set marks based on Subject Code
+        if(subCode.equals("stochastic"))
+            viewHolder.marks.setText(students.get(i).Stochastic_Processes);
+        else if(subCode.equals("os"))
+            viewHolder.marks.setText(students.get(i).Operating_Systems);
+        else if(subCode.equals("se"))
+            viewHolder.marks.setText(students.get(i).Software_Engineering);
+        else if(subCode.equals("ds"))
+            viewHolder.marks.setText(students.get(i).Discrete_Structures);
+        else if(subCode.equals("java"))
+            viewHolder.marks.setText(students.get(i).Advanced_Java);
+        else if(subCode.equals("dcn"))
+            viewHolder.marks.setText(students.get(i).Data_Communications);
 
     }
 
     @Override
     public int getItemCount() {
 
-        return mroll_no.size();
+        return students.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {         // Holds the views or data in the memory for displaying
 
         TextView t1, t2, t3;
+        EditText marks;
         RelativeLayout parent_lay;
 
         public ViewHolder(@NonNull View itemView) {
@@ -65,7 +76,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             t1 = itemView.findViewById(R.id.textView100);
             t2 = itemView.findViewById(R.id.textView101);
             t3 = itemView.findViewById(R.id.editText168);
-
+            marks = itemView.findViewById(R.id.editText167);
         }
     }
 }
