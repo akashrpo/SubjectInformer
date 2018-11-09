@@ -6,8 +6,12 @@ import com.example.akash.marksuploader.Student;
 import java.util.Calendar;
 import java.util.List;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface SIRequestApi {
@@ -19,4 +23,7 @@ public interface SIRequestApi {
 
     @GET("SubjectInformer/MarksView/")
     Call<List<Student>> getStudentDetails(@Query("format") String format);
+
+    @PUT("SubjectInformer/MarksUpdate/{id}/")
+    Call<ResponseBody> updateStudentDetails(@Path("id") String regdNo, @Body Student student);
 }

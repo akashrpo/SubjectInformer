@@ -38,8 +38,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         Log.d(TAG, "onBindViewHolder: called");
-
-//-----------------------------------------
+        
         viewHolder.t1.setText(students.get(i).rollNo);
         viewHolder.t2.setText(students.get(i).name);
         viewHolder.t3.setText(students.get(i).regdNo);
