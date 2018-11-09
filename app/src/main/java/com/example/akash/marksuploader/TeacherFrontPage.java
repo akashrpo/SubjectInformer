@@ -22,8 +22,15 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class TeacherFrontPage extends AppCompatActivity {
 
+
+public class TeacherFrontPage extends AppCompatActivity {
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+        finish();
+    }
 
     private List<Student> students;
     @Override

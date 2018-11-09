@@ -1,5 +1,6 @@
 package com.example.akash.marksuploader;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -16,7 +17,12 @@ public class student extends AppCompatActivity {
     private TextView SoftwareEngineeringView;
     private TextView DiscreteStructuresView;
     private TextView AdvancedJavaView;
-
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+        finish();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
