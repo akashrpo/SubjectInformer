@@ -31,7 +31,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".Student"
+            android:name=".student"
             android:screenOrientation="portrait" />
         <activity android:name=".TeacherFrontPage" />
         <activity

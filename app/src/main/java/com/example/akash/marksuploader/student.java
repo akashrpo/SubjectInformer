@@ -6,7 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.Date;
 
-public class Student extends AppCompatActivity {
+public class student extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class Student extends AppCompatActivity {
 
         Date date = new Date();
 
-        Toast.makeText(Student.this,"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
+        Toast.makeText(student.this,"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
         TextView t = (TextView) findViewById(R.id.textView6);
         t.setText("70");
         // getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.my)));
