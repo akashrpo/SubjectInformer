@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- ajksdfahsdfk nsdklvnasdvfnhsdjkvfnhklasdjhfiweuonhfkhvkasdvsda -->
-
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -45,7 +43,8 @@
             android:name=".feedback"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".studentMarks" />
-        <activity android:name=".InternalMarks">
+        <activity android:name=".InternalMarks" />
+        <activity android:name=".attendance">
 
         </activity>
     </application>

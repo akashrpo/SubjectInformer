@@ -1,10 +1,14 @@
 package com.example.akash.marksuploader;
 
+import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ScrollView;
 
 import java.util.ArrayList;
@@ -35,9 +39,32 @@ public class InternalMarks extends AppCompatActivity {
         ScrollView scvMain = (ScrollView) findViewById(R.id.scrollview_IM);
         scvMain.fullScroll(ScrollView.FOCUS_UP);
         scvMain.smoothScrollTo(0, 0);
-
+        setTitle("Interal Marks");
         select();
+
+
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.att:
+                    startActivity(new Intent(getApplicationContext(), attendance.class));
+                    return true;
+                case R.id.IM:
+                    startActivity(new Intent(getApplicationContext(), InternalMarks.class));
+                    return true;
+
+            }
+            return false;
+        }
+    };
 
     private void select() {
         Log.d(TAG, "initalizing the databases");
@@ -93,17 +120,6 @@ public class InternalMarks extends AppCompatActivity {
         massign.add("5");
         mattnd.add("5");
         mtotal.add("40");
-        msub_code.add("MA1401");
-        msubjects.add("ENGINEERING MATHEMATICS IV(T)");
-        mquiz_I.add("4");
-        msess_I_50.add("33");
-        msess_I_15.add("9.9");
-        mquiz_II.add("2");
-        msess_II_50.add("40");
-        msess_II_15.add("12");
-        massign.add("5");
-        mattnd.add("5");
-        mtotal.add("40");
 
         msub_code.add("MA1401");
         msubjects.add("ENGINEERING MATHEMATICS IV(T)");
@@ -165,53 +181,6 @@ public class InternalMarks extends AppCompatActivity {
         mattnd.add("5");
         mtotal.add("40");
 
-        msub_code.add("MA1401");
-        msubjects.add("ENGINEERING MATHEMATICS IV(T)");
-        mquiz_I.add("4");
-        msess_I_50.add("33");
-        msess_I_15.add("9.9");
-        mquiz_II.add("2");
-        msess_II_50.add("40");
-        msess_II_15.add("12");
-        massign.add("5");
-        mattnd.add("5");
-        mtotal.add("40");
-
-        msub_code.add("MA1401");
-        msubjects.add("ENGINEERING MATHEMATICS IV(T)");
-        mquiz_I.add("4");
-        msess_I_50.add("33");
-        msess_I_15.add("9.9");
-        mquiz_II.add("2");
-        msess_II_50.add("40");
-        msess_II_15.add("12");
-        massign.add("5");
-        mattnd.add("5");
-        mtotal.add("40");
-
-        msub_code.add("MA1401");
-        msubjects.add("ENGINEERING MATHEMATICS IV(T)");
-        mquiz_I.add("4");
-        msess_I_50.add("33");
-        msess_I_15.add("9.9");
-        mquiz_II.add("2");
-        msess_II_50.add("40");
-        msess_II_15.add("12");
-        massign.add("5");
-        mattnd.add("5");
-        mtotal.add("40");
-
-        msub_code.add("MA1401");
-        msubjects.add("ENGINEERING MATHEMATICS IV(T)");
-        mquiz_I.add("4");
-        msess_I_50.add("33");
-        msess_I_15.add("9.9");
-        mquiz_II.add("2");
-        msess_II_50.add("40");
-        msess_II_15.add("12");
-        massign.add("5");
-        mattnd.add("5");
-        mtotal.add("40");
 
 
         //------------------------------------
