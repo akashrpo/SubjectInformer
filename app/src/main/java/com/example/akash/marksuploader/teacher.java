@@ -143,4 +143,10 @@ public class teacher extends AppCompatActivity {
                 }
             });
         }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getStudentDetails();
+    }
 }
