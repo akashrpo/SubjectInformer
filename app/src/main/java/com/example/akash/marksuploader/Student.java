@@ -55,6 +55,9 @@ public class Student implements Parcelable {
         this.Advanced_Java = data[10];
     }
 
+    public Student(){
+        //Empty Constructor
+    }
     @Override
     public int describeContents() {
         return 0;

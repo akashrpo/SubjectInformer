@@ -42,14 +42,14 @@ public class Login extends AppCompatActivity {
         });
 
 
-        Button btn3 = (Button) findViewById(R.id.button007);
+        /*Button btn3 = (Button) findViewById(R.id.button007);
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this, TeacherFrontPage.class));
             }
-        });
+        });*/
 
         final EditText ed2 = (EditText) findViewById(R.id.editText4);
         final EditText ed3 = (EditText) findViewById(R.id.editText2);
@@ -69,7 +69,11 @@ public class Login extends AppCompatActivity {
 //                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
                     ed3.setError("Invalid Credentials!");
 
-                } else {
+                }
+                else if(UserIdView.getText().toString().equals("teacher") && PasswordView.getText().toString().equals("smit")){
+                    startActivity(new Intent(Login.this, TeacherFrontPage.class));
+                }
+                else {
                     //Call to Retrofit class is done here
                     Student student = getStudents.getStudent(UserIdView.getText().toString(),PasswordView.getText().toString());
                     if(student != null) {
