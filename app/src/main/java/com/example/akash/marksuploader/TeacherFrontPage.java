@@ -23,7 +23,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-
 public class TeacherFrontPage extends AppCompatActivity {
     @Override
     public void onBackPressed() {
@@ -33,6 +32,7 @@ public class TeacherFrontPage extends AppCompatActivity {
     }
 
     private List<Student> students;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,14 +40,14 @@ public class TeacherFrontPage extends AppCompatActivity {
         String user = "Teachers";
         setTitle("Howdy, " + user + "!");
         Date date = new Date();
-        Toast.makeText(TeacherFrontPage.this,"Welcome, "+user+"!\n"+date.toString(),Toast.LENGTH_LONG).show();
+        Toast.makeText(TeacherFrontPage.this, "Welcome, " + user + "!\n" + date.toString(), Toast.LENGTH_LONG).show();
         //Array of student Objects to store list of student details
         students = new ArrayList<Student>();
         //Function to all Student Details from Server
         getStudentDetails();
         //Error Check
-        if(students == null){
-            Log.e("Null Value Returned","Student List is Null");
+        if (students == null) {
+            Log.e("Null Value Returned", "Student List is Null");
         }
 
         RelativeLayout stochastic = (RelativeLayout) findViewById(R.id.relativeLayout3);
@@ -55,11 +55,11 @@ public class TeacherFrontPage extends AppCompatActivity {
         stochastic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
                 //passing a subject code to each activity to specify which subject to display
-                intent.putExtra("subCode","stochastic");
+                intent.putExtra("subCode", "stochastic");
                 //passing the entire array of students as Patch/Put request needs to be completed from Uploader.class
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
                 startActivity(intent);
             }
         });
@@ -69,10 +69,11 @@ public class TeacherFrontPage extends AppCompatActivity {
         os.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
-                intent.putExtra("subCode","os");
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
-                startActivity(intent);            }
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
+                intent.putExtra("subCode", "os");
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
+                startActivity(intent);
+            }
         });
 
         RelativeLayout se = (RelativeLayout) findViewById(R.id.relativeLayout4);
@@ -80,9 +81,9 @@ public class TeacherFrontPage extends AppCompatActivity {
         se.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
-                intent.putExtra("subCode","se");
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
+                intent.putExtra("subCode", "se");
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
                 startActivity(intent);
             }
         });
@@ -92,9 +93,9 @@ public class TeacherFrontPage extends AppCompatActivity {
         ds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
-                intent.putExtra("subCode","ds");
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
+                intent.putExtra("subCode", "ds");
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
                 startActivity(intent);
             }
         });
@@ -104,9 +105,9 @@ public class TeacherFrontPage extends AppCompatActivity {
         dcn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
-                intent.putExtra("subCode","dcn");
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
+                intent.putExtra("subCode", "dcn");
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
                 startActivity(intent);
             }
         });
@@ -116,40 +117,39 @@ public class TeacherFrontPage extends AppCompatActivity {
         java.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TeacherFrontPage.this,Uploader.class);
-                intent.putExtra("subCode","java");
-                intent.putParcelableArrayListExtra("studentDetails",(ArrayList<? extends Parcelable>) students);
+                Intent intent = new Intent(TeacherFrontPage.this, Uploader.class);
+                intent.putExtra("subCode", "java");
+                intent.putParcelableArrayListExtra("studentDetails", (ArrayList<? extends Parcelable>) students);
                 startActivity(intent);
             }
         });
 
     }
 
-    private void getStudentDetails(){
-            SIRequestApi apiService = ApiClient.getClient().create(SIRequestApi.class);
-            Call<List<Student>> call = apiService.getStudentDetails("json");
-            call.enqueue(new Callback<List<Student>>() {
-                @Override
-                public void onResponse(Call<List<Student>> call, Response<List<Student>> response) {
-                    if(response.isSuccessful()){
-                        Log.d("Successful","Received Students "+response.body());
-                        students = response.body();
-                    }
-                    else{
-                        students = null;
-                        Log.d("Failure","did not receive students");
-                        // Snackbar.make(signInLayout,"cant receive students",Snackbar.LENGTH_LONG).show();
-                    }
-                }
-
-                @Override
-                public void onFailure(Call<List<Student>> call, Throwable t) {
+    private void getStudentDetails() {
+        SIRequestApi apiService = ApiClient.getClient().create(SIRequestApi.class);
+        Call<List<Student>> call = apiService.getStudentDetails("json");
+        call.enqueue(new Callback<List<Student>>() {
+            @Override
+            public void onResponse(Call<List<Student>> call, Response<List<Student>> response) {
+                if (response.isSuccessful()) {
+                    Log.d("Successful", "Received Students " + response.body());
+                    students = response.body();
+                } else {
                     students = null;
-                    //Snackbar.make(signInLayout,"network error",Snackbar.LENGTH_LONG).show();
-                    Log.e("Network Failure",t.getMessage());
+                    Log.d("Failure", "did not receive students");
+                    // Snackbar.make(signInLayout,"cant receive students",Snackbar.LENGTH_LONG).show();
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onFailure(Call<List<Student>> call, Throwable t) {
+                students = null;
+                //Snackbar.make(signInLayout,"network error",Snackbar.LENGTH_LONG).show();
+                Log.e("Network Failure", t.getMessage());
+            }
+        });
+    }
 
     @Override
     protected void onResume() {

@@ -39,7 +39,7 @@ public class Student implements Parcelable {
     @SerializedName("Advanced_Java")
     public String Advanced_Java;
 
-    public Student(Parcel in){
+    public Student(Parcel in) {
         String[] data = new String[11];
         in.readStringArray(data);
         this.regdNo = data[0];
@@ -55,9 +55,10 @@ public class Student implements Parcelable {
         this.Advanced_Java = data[10];
     }
 
-    public Student(){
+    public Student() {
         //Empty Constructor
     }
+
     @Override
     public int describeContents() {
         return 0;
@@ -65,12 +66,12 @@ public class Student implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeStringArray(new String[]{this.regdNo,this.password,this.name,
-                this.rollNo,this.dept,this.Data_Communications,this.Software_Engineering,
-        this.Operating_Systems,this.Discrete_Structures,this.Stochastic_Processes,this.Advanced_Java});
+        dest.writeStringArray(new String[]{this.regdNo, this.password, this.name,
+                this.rollNo, this.dept, this.Data_Communications, this.Software_Engineering,
+                this.Operating_Systems, this.Discrete_Structures, this.Stochastic_Processes, this.Advanced_Java});
     }
 
-    public static final Creator<Student> CREATOR = new Creator<Student>(){
+    public static final Creator<Student> CREATOR = new Creator<Student>() {
         @Override
         public Student createFromParcel(Parcel source) {
             // TODO Auto-generated method stub

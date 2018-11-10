@@ -101,7 +101,7 @@
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/pho"
+            android:drawableLeft="@drawable/ic_action_roll_no"
             android:ems="10"
             android:hint="Roll No"
             android:inputType="phone"

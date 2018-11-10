@@ -18,6 +18,7 @@ public class Login extends AppCompatActivity {
     EditText UserIdView;
     EditText PasswordView;
     GetStudents getStudents;
+
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
@@ -64,25 +65,21 @@ public class Login extends AppCompatActivity {
 //                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
                     ed2.setError("Invalid Credentials!");
 
-                }
-                else if(isEmptyField((EditText) findViewById(R.id.editText2))) {
+                } else if (isEmptyField((EditText) findViewById(R.id.editText2))) {
 //                    Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
                     ed3.setError("Invalid Credentials!");
 
-                }
-                else if(UserIdView.getText().toString().equals("teacher") && PasswordView.getText().toString().equals("smit")){
+                } else if (UserIdView.getText().toString().equals("teacher") && PasswordView.getText().toString().equals("smit")) {
                     startActivity(new Intent(Login.this, TeacherFrontPage.class));
-                }
-                else {
+                } else {
                     //Call to Retrofit class is done here
-                    Student student = getStudents.getStudent(UserIdView.getText().toString(),PasswordView.getText().toString());
-                    if(student != null) {
+                    Student student = getStudents.getStudent(UserIdView.getText().toString(), PasswordView.getText().toString());
+                    if (student != null) {
                         Intent intent = new Intent(getApplicationContext(), student.class);
-                        intent.putExtra("studentParcel",student);
+                        intent.putExtra("studentParcel", student);
                         startActivity(intent);
-                    }
-                    else {
-                        Log.d("User not received","not received");
+                    } else {
+                        Log.d("User not received", "not received");
                     }
                 }
             }

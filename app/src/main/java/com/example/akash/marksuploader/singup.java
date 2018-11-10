@@ -24,6 +24,7 @@ public class singup extends AppCompatActivity {
 
     private Student student;
     private ResponseBody updated;
+
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
@@ -83,8 +84,8 @@ public class singup extends AppCompatActivity {
 
                 } else {
                     if (isSpin(myspin).equals("Select Department")) {
-                        ((TextView)myspin.getSelectedView()).setError("Select Your Department");
-                    }  else if (isEmptyFieldpass((EditText) findViewById(R.id.password))) { //Password
+                        ((TextView) myspin.getSelectedView()).setError("Select Your Department");
+                    } else if (isEmptyFieldpass((EditText) findViewById(R.id.password))) { //Password
                         passwordView.setError("Password atleast 8 char long");
 
                     } else {
@@ -124,19 +125,18 @@ public class singup extends AppCompatActivity {
         return flag;
     }
 
-    private void registerStudent(Student student){
+    private void registerStudent(Student student) {
         SIRequestApi apiService = ApiClient.getClient().create(SIRequestApi.class);
         Call<ResponseBody> call = apiService.registerStudent(student);
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                if(response.isSuccessful()){
-                    Log.e("Successful","Uploaded Student "+response.body());
+                if (response.isSuccessful()) {
+                    Log.e("Successful", "Uploaded Student " + response.body());
                     updated = response.body();
-                }
-                else{
+                } else {
                     updated = response.errorBody();
-                    Log.e("Failure",updated.toString());
+                    Log.e("Failure", updated.toString());
                     // Snackbar.make(signInLayout,"cant receive student",Snackbar.LENGTH_LONG).show();
                 }
             }
@@ -145,7 +145,7 @@ public class singup extends AppCompatActivity {
             public void onFailure(Call<ResponseBody> call, Throwable t) {
                 updated = null;
                 //Snackbar.make(signInLayout,"network error",Snackbar.LENGTH_LONG).show();
-                Log.e("Network Failure",t.getMessage());
+                Log.e("Network Failure", t.getMessage());
             }
         });
     }

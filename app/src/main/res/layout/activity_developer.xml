@@ -6,180 +6,182 @@
     android:layout_height="match_parent"
     android:background="#263238"
     tools:context=".Developers">
-<android.support.constraint.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:id="@+id/relative1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/sub_bor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021">
 
-        <ImageView
-            android:id="@+id/image30"
-            android:layout_width="57dp"
-            android:layout_height="61dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/aa" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021">
+
+            <ImageView
+                android:id="@+id/image30"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/aa" />
+
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/image30"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Akash Gupta"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image31"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/sub_bor"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative3">
+
+            <ImageView
+                android:id="@+id/image80"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/aa" />
+
+            <TextView
+                android:id="@+id/text88"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/image80"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Computer Networks I"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image88"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/sub_bor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative1">
+
+            <ImageView
+                android:id="@+id/image11"
+                android:layout_width="57dp"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/aa" />
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="219dp"
+                android:layout_height="47dp"
+                android:layout_alignBottom="@+id/image11"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginBottom="-10dp"
+                android:text="Devesh Pradhan"
+                android:textColor="#8a95b3"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image22"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@drawable/go" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/text31"
-            android:layout_width="219dp"
-            android:layout_height="47dp"
-            android:layout_alignBottom="@+id/image30"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="81dp"
-            android:layout_marginBottom="-10dp"
-            android:text="Akash Gupta"
-            android:textColor="#8a95b3"
-            android:textSize="14dp"
-            android:textStyle="bold" />
+            android:id="@+id/textView2"
+            android:layout_width="279dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sub_bor"
+            android:padding="10dp"
+            android:text="@string/software_engineering_project_2018"
+            android:textColor="@color/spinn"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/relative2"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/relative2"
+            app:layout_constraintTop_toBottomOf="@+id/relative2" />
 
-        <ImageView
-            android:id="@+id/image31"
-            android:layout_width="35dp"
-            android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="11dp"
-            app:srcCompat="@drawable/go" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relative2"
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/sub_bor"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relative3">
-
-        <ImageView
-            android:id="@+id/image80"
-            android:layout_width="57dp"
-            android:layout_height="61dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/aa" />
 
         <TextView
-            android:id="@+id/text88"
-            android:layout_width="219dp"
-            android:layout_height="47dp"
-            android:layout_alignBottom="@+id/image80"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="81dp"
-            android:layout_marginBottom="-10dp"
-            android:text="Computer Networks I"
+            android:id="@+id/textView14"
+            android:layout_width="191dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sub_bor"
+            android:drawableRight="@drawable/feed_back"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:text="Send Feedback"
+            android:textAlignment="center"
             android:textColor="#8a95b3"
-            android:textSize="14dp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/image88"
-            android:layout_width="35dp"
-            android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="11dp"
-            app:srcCompat="@drawable/go" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relative3"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/sub_bor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relative1">
-
-        <ImageView
-            android:id="@+id/image11"
-            android:layout_width="57dp"
-            android:layout_height="61dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/aa" />
-
-        <TextView
-            android:id="@+id/text22"
-            android:layout_width="219dp"
-            android:layout_height="47dp"
-            android:layout_alignBottom="@+id/image11"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="81dp"
-            android:layout_marginBottom="-10dp"
-            android:text="Devesh Pradhan"
-            android:textColor="#8a95b3"
-            android:textSize="14dp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/image22"
-            android:layout_width="35dp"
-            android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="11dp"
-            app:srcCompat="@drawable/go" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="279dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/sub_bor"
-        android:padding="10dp"
-        android:text="@string/software_engineering_project_2018"
-        android:textColor="@color/spinn"
-        android:textSize="20dp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/relative2"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/relative2"
-        app:layout_constraintTop_toBottomOf="@+id/relative2" />
-
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="191dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/sub_bor"
-        android:drawableRight="@drawable/feed_back"
-        android:gravity="center"
-        android:text="Send Feedback"
-        android:textAlignment="center"
-        android:textColor="#8a95b3"
-        android:textSize="17dp"
-        android:paddingRight="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-    <!--Visibility is false here-->
-</android.support.constraint.ConstraintLayout>
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <!--Visibility is false here-->
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>

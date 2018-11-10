@@ -21,7 +21,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private String subCode;
 
 
-    public RecyclerViewAdapter(Context context, List<Student> students,String subCode) {
+    public RecyclerViewAdapter(Context context, List<Student> students, String subCode) {
         mcontext = context;
         this.students = students;
         this.subCode = subCode;
@@ -38,22 +38,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         Log.d(TAG, "onBindViewHolder: called");
-        
+
         viewHolder.t1.setText(students.get(i).rollNo);
         viewHolder.t2.setText(students.get(i).name);
         viewHolder.t3.setText(students.get(i).regdNo);
         //Set marks based on Subject Code
-        if(subCode.equals("stochastic"))
+        if (subCode.equals("stochastic"))
             viewHolder.marks.setText(students.get(i).Stochastic_Processes);
-        else if(subCode.equals("os"))
+        else if (subCode.equals("os"))
             viewHolder.marks.setText(students.get(i).Operating_Systems);
-        else if(subCode.equals("se"))
+        else if (subCode.equals("se"))
             viewHolder.marks.setText(students.get(i).Software_Engineering);
-        else if(subCode.equals("ds"))
+        else if (subCode.equals("ds"))
             viewHolder.marks.setText(students.get(i).Discrete_Structures);
-        else if(subCode.equals("java"))
+        else if (subCode.equals("java"))
             viewHolder.marks.setText(students.get(i).Advanced_Java);
-        else if(subCode.equals("dcn"))
+        else if (subCode.equals("dcn"))
             viewHolder.marks.setText(students.get(i).Data_Communications);
 
     }
