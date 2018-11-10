@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/logo" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/regdNo"
             android:layout_width="245dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
@@ -41,7 +41,7 @@
 
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/password"
             android:layout_width="245dp"
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
@@ -54,10 +54,10 @@
             android:inputType="textPassword"
             android:textColor="#ccbdbb"
             android:textColorHint="#4b4747"
-            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="@+id/rollNo"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintStart_toStartOf="@+id/rollNo"
+            app:layout_constraintTop_toBottomOf="@+id/rollNo" />
 
 
         <Button
@@ -70,10 +70,10 @@
             android:text="Create Account"
             android:textColor="#ccbdbb"
             android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="@+id/editText8"
+            app:layout_constraintEnd_toEndOf="@+id/password"
             app:layout_constraintHorizontal_bias="0.343"
-            app:layout_constraintStart_toStartOf="@+id/editText8"
-            app:layout_constraintTop_toBottomOf="@+id/editText8" />
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
 
         <TextView
@@ -96,36 +96,36 @@
             app:layout_constraintVertical_bias="0.521" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/rollNo"
             android:layout_width="245dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/pho"
             android:ems="10"
-            android:hint="Phone No."
+            android:hint="Roll No"
             android:inputType="phone"
             android:textColor="#ccbdbb"
             android:textColorHint="#4b4747"
-            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="@+id/deptSpinner"
             app:layout_constraintHorizontal_bias="0.652"
-            app:layout_constraintStart_toStartOf="@+id/spinner"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintStart_toStartOf="@+id/deptSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/deptSpinner" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/deptSpinner"
             android:layout_width="280dp"
             android:layout_height="46dp"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="20dp"
             android:textColor="#ccbdbb"
             android:textColorHint="#4b4747"
-            app:layout_constraintEnd_toEndOf="@+id/editText5"
-            app:layout_constraintStart_toStartOf="@+id/editText5"
-            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+            app:layout_constraintEnd_toEndOf="@+id/nameInput"
+            app:layout_constraintStart_toStartOf="@+id/nameInput"
+            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/nameInput"
             android:layout_width="245dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -135,9 +135,9 @@
             android:inputType="textPersonName"
             android:textColor="#ccbdbb"
             android:textColorHint="#4b4747"
-            app:layout_constraintEnd_toEndOf="@+id/editText7"
-            app:layout_constraintStart_toStartOf="@+id/editText7"
-            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+            app:layout_constraintEnd_toEndOf="@+id/regdNo"
+            app:layout_constraintStart_toStartOf="@+id/regdNo"
+            app:layout_constraintTop_toBottomOf="@+id/regdNo" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
