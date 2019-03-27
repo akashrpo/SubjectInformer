@@ -7,6 +7,6 @@ This app is made as an college project where teachers can upload the marks and s
 
 Developed By:
 
-Akash Gupta
-Akash Singh
-Devesh Pradhan
+Akash Gupta,
+Akash Singh,
+Devesh Pradhan.
