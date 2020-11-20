@@ -3,10 +3,4 @@ Software Engineering Project CS 1504.
 
 Subject Informer Android App:
 
-This app is made as an college project where teachers can upload the marks and students and view it.
-
-Developed By:
-
-Akash Gupta,
-Akash Singh,
-Devesh Pradhan.
+This app is made as an college project where teachers can upload the marks and students can view it.
